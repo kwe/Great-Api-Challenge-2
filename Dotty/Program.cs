@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/joke", () => new Joke
+app.MapGet("/joke2", () => new Joke
 {
   Text = "What do you call a bear with no teeth? A gummy bear!",
   Category = "animal"
