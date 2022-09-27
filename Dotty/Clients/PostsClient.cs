@@ -23,16 +23,16 @@ public class PostsClient : IPostsClient
     _httpClientFactory = httpClientFactory;
   }
 
-  public async Task<PostsResponse?> GetPostsAsync()
+  public async Task<IEnumerable<Post>?> GetPostsAsync()
   {
     var client = _httpClientFactory.CreateClient(ClientName);
     var response = await client.GetAsync("posts");
 
-    return await response.Content.ReadFromJsonAsync<PostsResponse>();
+    return await response.Content.ReadFromJsonAsync<IEnumerable<Post>>();
   }
 }
 
 public interface IPostsClient
 {
-  Task<PostsResponse?> GetPostsAsync();
+  Task<IEnumerable<Post>?> GetPostsAsync();
 }

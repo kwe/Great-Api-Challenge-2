@@ -21,7 +21,7 @@ var app = builder.Build();
 //app.UseHttpsRedirection();
 // app.MapControllers();
 // // return a joke as a json object
-// app.MapGet("/joke", () => new { joke = "What do you call a bear with no teeth? A gummy bear!" })
+app.MapGet("/joke", () => new { joke = "What do you call a bear with no teeth? A gummy bear!" });
 //   .WithName("GetJoke")
 //   .WithOpenApi();
 

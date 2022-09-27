@@ -16,8 +16,3 @@ public class Post
   [JsonPropertyName("body")]
   public string? Body { get; set; }
 }
-
-public class PostsResponse
-{
-  public Post[]? Post { get; set; }
-}
