@@ -4,20 +4,20 @@ namespace Dotty.Models;
 
 public class Post
 {
-    [JsonPropertyName("userId")]
-    public int UserId { get; set; }
+  [JsonPropertyName("userId")]
+  public int UserId { get; set; }
 
-    [JsonPropertyName("id")]
-    public int Id { get; set; }
+  [JsonPropertyName("id")]
+  public int Id { get; set; }
 
-    [JsonPropertyName("title")]
-    public string? Title { get; set; }
+  [JsonPropertyName("title")]
+  public string? Title { get; set; }
 
-    [JsonPropertyName("body")]
-    public string? Body { get; set; }
+  [JsonPropertyName("body")]
+  public string? Body { get; set; }
 }
 
 public class PostsResponse
 {
-    public Post[]? Post { get; set; }
+  public Post[]? Post { get; set; }
 }
